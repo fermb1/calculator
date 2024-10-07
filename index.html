@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Calculadora Básica</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+  <table border="0">
+    <tr>
+      <td colspan="4">
+        <input name="display" type="text" class="color_display" id="display" readonly>
+      </td>
+    </tr>
+    <tr>
+      <td><button class="numero" onclick="seleccionarOperacion('+')">+</button></td>
+      <td><button class="numero" onclick="seleccionarOperacion('-')">-</button></td>
+      <td><button class="numero" onclick="seleccionarOperacion('*')">*</button></td>
+      <td><button class="numero" onclick="seleccionarOperacion('/')">/</button></td>
+    </tr>
+    <tr>
+      <td><button class="numero" onclick="display_number(7)">7</button></td>
+      <td><button class="numero" onclick="display_number(8)">8</button></td>
+      <td><button class="numero" onclick="display_number(9)">9</button></td>
+      <td><button class="numero" onclick="eliminar()">C</button></td>
+    </tr>
+    <tr>
+      <td><button class="numero" onclick="display_number(4)">4</button></td>
+      <td><button class="numero" onclick="display_number(5)">5</button></td>
+      <td><button class="numero" onclick="display_number(6)">6</button></td>
+    </tr>
+    <tr>
+      <td><button class="numero" onclick="display_number(1)">1</button></td>
+      <td><button class="numero" onclick="display_number(2)">2</button></td>
+      <td><button class="numero" onclick="display_number(3)">3</button></td>
+    </tr>
+    <tr>
+      <td><button class="numero" onclick="display_number(0)">0</button></td>
+      <td><button class="numero">,</button></td>
+      <td colspan="2"><button class="igual" onclick="resultado()">=</button></td>
+    </tr>
+  </table>
+
+  <script>
+    // Inicializa el display en 0
+    document.getElementById("display").value = 0;
+  </script>
+</body>
+</html>
